@@ -1,6 +1,6 @@
 var React = require('react');
 var MessageStore = require('../stores/MessageStore');
-var Button = require('./Button.jsx');
+var UpdateMessage = require('./UpdateMessage.jsx');
 
 var Application = React.createClass({
 
@@ -27,7 +27,7 @@ var Application = React.createClass({
   render: function () {
     return <section>
             <h1>{this.state.message}</h1>
-            <Button />
+            <UpdateMessage />
           </section>;
   }
 });
