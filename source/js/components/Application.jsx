@@ -25,7 +25,7 @@ var Application = React.createClass({
   },
 
   render: function () {
-    return <section>
+    return <section className="container">
             <h1>{this.state.message}</h1>
             <UpdateMessage />
           </section>;
