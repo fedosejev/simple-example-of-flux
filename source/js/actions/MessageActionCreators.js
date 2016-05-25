@@ -1,14 +1,14 @@
 var Dispatcher = require('../dispatcher/Dispatcher');
 
-function changeMessage() {
+function updateMessage(message) {
   var action = {
-    type: 'change_message',
-    message: 'Putting in more effort actually matters.'
+    type: 'update_message',
+    message: message
   };
 
   Dispatcher.dispatch(action);
 }
 
 module.exports = {
-  changeMessage: changeMessage
+  updateMessage: updateMessage
 };

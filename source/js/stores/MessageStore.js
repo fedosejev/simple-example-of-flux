@@ -26,7 +26,7 @@ var messageStoreObject = {
 var MessageStore = objectAssign({}, messageStoreObject, EventEmitter.prototype);
 
 function handleAction(action) {
-  if (action.type === 'change_message') {
+  if (action.type === 'update_message') {
     setMessage(action.message);
   }
 }
